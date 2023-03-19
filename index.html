@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ar Designs</title>
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="shortcut icon" href="./IMAGES/logo-transparent.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/633ffd52b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen and (max-width: 923px)" href="./css/phone.css">
+</head>
+
+<body>
+    <main>
+        <!-- menu -->
+        <div id="upper">
+            <div id="menu">
+                <div class="logo"><img src="./IMAGES/logo-transparent.png" alt="" srcset=""></div>
+                <div id="responsivemenu" onclick="openmenu()">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                </div>
+                <ul id="menumain">
+                    <li><a href="#upper">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact-Me</a></li>
+                </ul>
+
+            </div>
+            <!-- slogan -->
+            <div class="cover">
+                <div class="slogan">
+                    <span>A</span>
+                    <span>.</span>
+                    <span>R</span>&nbsp;
+                    <span>D</span>
+                    <span>e</span>
+                    <span>S</span>
+                    <span>I</span>
+                    <span>G</span>
+                    <span>N</span>
+                    <span>S</span>
+                    <p>Design your imagination</p>
+                </div>
+            </div>
+        </div>
+        <div id="aboutme">
+            <h1>About-Me</h1>
+            <div class="row">
+                <div class="profile"><img src="./IMAGES/profile.jpg" alt="" srcset=""></div>
+                <section class="about">
+                    <div class="description">
+                        <h1>Hello,</h1>
+                        <p>I am Ankijit Roy a self taught web designer and developer from
+                            Assam,India
+                            I am proficient in frontend development which includes HTML, CSS and JavaScript and frontend
+                            framework like react along with the understanding of backend technologies like Node.js,
+                            Express and MongoDB
+                        </p>
+                    </div>
+                    <!-- qualities -->
+                    <div class="tabs">
+                        <div class="tab activetab" onclick="opentab('Skills')">Skills</div>
+                        <div class="tab" onclick="opentab('Education')">Education</div>
+                        <div class="tab" onclick="opentab('Projects')">Projects</div>
+                    </div>
+                    <div class="tabdescription activetabdescription" id="Skills">
+                        <ul>
+                            <li><span>UI/UX Design:-</span>
+                                <p>Design Websites interface</p>
+                            </li>
+                            <li><span>Web developer:-</span>
+                                <p>Develop Websites and single page web applications</p>
+                            </li>
+                            <li><span>Manage Databases:-</span>
+                                <p>Can manage and integrate databases into websites</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabdescription" id="Education">
+                        <ul>
+                            <li><span>2008-2018</span>
+                                <p>St Stephen's High School</p>
+                            </li>
+                            <li><span>2018-2020</span>
+                                <p>Inventure Academy</p>
+                            </li>
+                            <li><span>2020-present</span>
+                                <p>Tinsukia College</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabdescription" id="Projects">
+                        <li><span>Imaginary music player</span>
+                            <p>Musico:-<a href="//ankijit.github.io/webplayer/" target="_blank">Visit site</a></p>
+                        </li>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- services -->
+        <div id="services">
+            <h1>Services to offer</h1>
+            <div class="servicetab">
+                <div class="service">
+                    <i class="fa-solid fa-blog"></i>
+                    <h1>Website Development</h1>
+                    <p>Design and develop professional level websites to match ur needs and desires.Also can create
+                        single page application using react.JS</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank"><input type="button"
+                            value="Details" class="readmore"></a>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h1>UI/UX design</h1>
+                    <p>Can create Web interfaces using FIGMA that can satisy need of the users and also can aid in
+                        understanding user interaction usingh websites</p>
+                    <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/" target="_blank"><input type="button"
+                            value="Details" class="readmore"></a>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-database"></i>
+                    <h1>Database management</h1>
+                    <p>Create and edit databases of mongoDB,SQL and can also integrate it into the websites for
+                        receiving data of the users directly </p>
+                    <a href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/"
+                        target="_blank">
+                        <input type="button" value="Details" class="readmore"></a>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+        <div id="portfolio">
+            <h1>My Professional Details</h1>
+            <h3>My works</h3>
+            <div class="myworks">
+                <div class="works">
+                    <img src="./IMAGES/web development.jpg">
+                    <div class="content">
+                        <h3>Website related project</h3>
+                        <p>To view web development related projects </p>
+                        <a href="./html/developmentproject.html" target="_blank"><input type="button"
+                                value="Click here"></a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="./IMAGES/webapp.png">
+                    <div class="content">
+                        <h3>Web app related project</h3>
+                        <p>To view web app related projects </p>
+                        <a href="./html/appproject.html" target="_blank"><input type="button" value="Click here"></a>
+                    </div>
+
+                </div>
+                <div class="works">
+                    <img src="./IMAGES/webdesign.jpg" target="_blank">
+                    <div class="content">
+                        <h3>Web design related project</h3>
+                        <p>To view web design related projects </p>
+                        <a href="./html/designproject.html" target="_blank"><input type="button" value="Click here"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mycv"><a href="./CV/cv.docx" download><input type="button" value="My CV"></a>
+                <p>Click here to download CV</p>
+            </div>
+        </div>
+        <!-- contactme -->
+        <div id="contact">
+            <div class="contact-me">
+                <div class="socialmediacontact">
+                    <h3>Get in touch</h3>
+                    <p><i class="fa-regular fa-envelope"></i>ankijit123@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100091178284158" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Ankijit" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100091178284158" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ankijit-roy-642409263" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+                <div class="form">
+                    <form name="submit-to-google-sheet">
+                        <h3>For clients</h3>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Requirements"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./javascript/tabschange.js"></script>
+    <script src="./javascript/responsivemenu.js"></script>
+    <script src="./javascript/form.js"> </script>
+
+</body>
+
+</html>

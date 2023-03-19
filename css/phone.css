@@ -1,0 +1,143 @@
+#menu {
+    background-color: var(--secondary-background);
+}
+
+#menumain {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: -200px;
+    text-align: right;
+    top: 85px;
+    height: 100%;
+    background-color: var(--secondary-background);
+    min-height: 100vh;
+    padding: 31px 0px 0px 28px;
+    line-height: 2.3;
+    transition: 0.5s all;
+}
+
+#menumain li a {
+    font-size: 19px;
+}
+
+#responsivemenu {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-right: 40px;
+    z-index: 2;
+}
+
+.logo img {
+    width: 80px;
+}
+
+#bar1,
+#bar2,
+#bar3 {
+    background-color: var(--textcolor1);
+    width: 20px;
+    height: 3px;
+    margin-top: 4px;
+    transition: all 0.5s;
+}
+
+/* slogan */
+.slogan {
+    left: 50%;
+    top: 35%;
+}
+
+.slogan span {
+    font-size: 2rem;
+}
+.slogan span:nth-child(4) {
+    margin-left: -17px;
+}
+.slogan p {
+    font-size: 1rem;
+}
+
+.cover {
+    height: 25rem;
+}
+
+#aboutme {
+    margin: 59px;
+}
+
+#aboutme>h1 {
+    font-size: 36px;
+    padding-bottom: 64px;
+}
+
+.row {
+    display: block;
+}
+
+.profile {
+    width: 76%;
+    display: block;
+
+}
+
+.profile img {
+    min-width: 100%;
+}
+
+.description h1 {
+    font-size: 34px;
+}
+
+.description p {
+    font-size: 15px;
+}
+
+
+#services>h1 {
+    font-size: 36px;
+    padding-bottom: 39px;
+}
+
+.service h1 {
+
+    font-size: 1.3rem;
+    margin-top: 6px;
+}
+
+.service i {
+    font-size: 2.2rem;
+}
+
+.tab {
+    margin: 23px 13px 27px 0px;
+    font-size: 15px;
+    font-family: var(--heading-text);
+    padding: 8px 8px 8px 8px;
+    transition: 0.3s all;
+    border: 3px solid var(--textcolor2);
+}
+
+/* portfolio */
+#portfolio h1 {
+    font-size: 33px;
+    padding: 54px 0;
+}
+#portfolio>h3 {
+    font-size: 1.7rem;
+}
+
+/* contact-me */
+.contact-me {
+    display: block;
+}
+
+
+form button {
+    margin-bottom: 0;
+}
+
+form h3 {
+    text-align: center;
+}

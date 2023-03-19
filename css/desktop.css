@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root {
+    --background: #000000;
+    --secondary-background: #1F2833;
+    --textcolor2: #00aedd;
+    --textcolor1: #68d9fe;
+    --textcolor3: #C5C6C7;
+    --heading-text: 'Golos Text', sans-serif;
+    --paragraph-text: 'Inter', sans-serif;
+    --transition: 0.5s all;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-text);
+    background-color: var(--background);
+    color: var(--textcolor1);
+    scroll-behavior: smooth;
+
+
+}
+
+/* menu */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--heading-text);
+    padding: 10px 10px;
+    background-color: var(--secondary-background);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+
+
+}
+
+.logo img {
+    width: 94px;
+}
+
+#upper {
+    background: url("../IMAGES/gabriella-sudjono-C43zQRa5GK0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#menu ul {
+    align-self: center;
+    padding-right: 1rem;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    font-size: 1.6rem;
+    color: var(--text1);
+    margin-right: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+
+#menu li a:hover {
+    text-shadow: 2px 2px 5px var(--textcolor2);
+}
+
+
+/* slogan */
+.cover {
+
+    height: 34rem;
+    width: 100%;
+
+
+
+}
+
+.slogan {
+    width: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 59%;
+    text-align: center;
+    animation: fadeIn 2s forwards;
+
+
+
+}
+
+.slogan span {
+    display: inline-block;
+    color: var(--text3);
+    font-family: var(--heading-text);
+    font-size: 4rem;
+    position: relative;
+    font-weight: 700;
+    transform: translateY(-20vh);
+    animation: fall 0.6s forwards;
+
+
+}
+
+
+@keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slogan span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.slogan span:nth-child(3) {
+    animation-delay: 0.2s;
+    margin-right: 30px;
+}
+
+.slogan span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.slogan span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.slogan span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.slogan span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.slogan span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.slogan span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.slogan span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.slogan p {
+    animation-delay: 1s;
+    color: var(--textcolor3);
+    font-size: 1.5rem;
+    font-family: var(--paragraph-text);
+    font-style: italic;
+    position: relative;
+    animation: fadeIn 2s 1.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+
+
+}
+
+
+/* About-me */
+#aboutme {
+    margin: 80px 100px;
+}
+
+#aboutme>h1 {
+    font-size: 58px;
+    text-align: center;
+    color: var(--textcolor2);
+    font-family: var(--heading-text);
+    padding-bottom: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.description h1 {
+    font-family: var(--heading-text);
+    font-size: 50px;
+
+}
+
+.description p {
+    color: var(--textcolor3);
+    font-size: 18px;
+}
+
+.profile {
+    flex-basis: 30%;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.about {
+    flex-basis: 65%;
+}
+
+/* tabs */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab {
+    margin: 23px 49px 28px 0px;
+    font-size: 20px;
+    font-family: var(--heading-text);
+    padding: 10px 10px 10px 10px;
+    transition: 0.3s all;
+    border: 3px solid var(--textcolor2);
+}
+
+.tab.activetab {
+    color: var(--background);
+    background-color: var(--textcolor1);
+    border-radius: 0 20px;
+}
+
+.tabdescription {
+    display: none;
+    transition: 0.6s all ease-in;
+}
+
+.tabdescription.activetabdescription {
+    display: block;
+}
+
+.tabdescription li {
+    list-style: none;
+    margin-bottom: 7px
+}
+
+.tabdescription p {
+    color: var(--textcolor3);
+}
+
+.tabdescription li a {
+    color: var(--textcolor2);
+    text-decoration: none;
+
+}
+
+.tabdescription li a:hover {
+    text-shadow: 2px 2px 5px var(--textcolor2);
+}
+
+.tabdescription li a:hover::after {
+    width: 100%;
+}
+
+#services>h1 {
+    font-size: 58px;
+    text-align: center;
+    color: var(--textcolor2);
+    font-family: var(--heading-text);
+    padding-bottom: 80px;
+}
+
+/* service */
+.servicetab {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+
+}
+
+.service {
+    background-color: var(--secondary-background);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.service:hover {
+    box-shadow: 10px 10px 10px var(--textcolor2);
+}
+
+.service p {
+    color: var(--textcolor3);
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+.readmore {
+    border: 2px solid var(--textcolor2);
+    color: var(--textcolor3);
+    background-color: rgb(61, 61, 61);
+    padding: 5px;
+    border-radius: 7px;
+    transition: 0.3s all;
+}
+
+.readmore:hover {
+    border-radius: 0 20px;
+    background-color: var(--textcolor2);
+    cursor: pointer;
+}
+
+
+
+
+/* portfolio */
+
+#portfolio h1 {
+    font-size: 58px;
+    text-align: center;
+    color: var(--textcolor2);
+    font-family: var(--heading-text);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+#portfolio>h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.myworks {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+.works img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.works {
+    box-shadow: 4px 4px 10px var(--textcolor2);
+    position: relative;
+    overflow: hidden;
+}
+
+.works:hover img {
+    transform: scale(1.1);
+}
+
+.content {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(31, 40, 51, 0.607), var(--secondary-background));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+
+.works:hover .content {
+    height: 100%;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.content input[type="button"] {
+    background-color: var(--textcolor2);
+    color: var(--textcolor3);
+    padding: 10px 10px 10px 10px;
+    margin-top: 13px;
+    border-radius: 8px;
+
+}
+
+.mycv {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mycv input[type="button"] {
+    background-color: var(--textcolor2);
+    color: var(--textcolor3);
+    padding: 10px 27px 10px 27px;
+    margin-top: 13px;
+    border-radius: 8px;
+
+}
+
+/* service */
+.service i {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#contact>h1 {
+    font-size: 58px;
+    text-align: center;
+    color: var(--textcolor2);
+    font-family: var(--heading-text);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.contact-me {
+    display: flex;
+    margin-top: 30px;
+    background-color: var(--secondary-background);
+    padding-top: 20px;
+}
+
+.socialmediacontact {
+    flex-basis: 35%;
+}
+
+.form {
+    flex-basis: 60%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--background);
+    padding: 15px;
+    margin: 15px 0;
+    caret-color: var(--textcolor1);
+    color: var(--textcolor3);
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px var(--textcolor2);
+}
+
+form button {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: var(--textcolor2);
+    color: var(--background);
+    font-weight: bold;
+}
+
+
+.socialmediacontact h3 {
+    margin: 30px;
+}
+
+.socialmediacontact p {
+    margin: 30px;
+    color: var(--textcolor3);
+}
+
+.contact-me i {
+    color: var(--textcolor2);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+
+.contact-me p a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: var(--textcolor2);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons {
+    margin: 30px;
+}
+
+.social-icons i {
+    transition: all 0.5s;
+}
+
+.social-icons i:hover {
+    text-shadow: 2px 2px 10px var(--textcolor2);
+
+}
+
+#msg {
+
+    color: #61b752;
+    margin-top: -77px;
+    display: block;
+    position: absolute;
+
+
+}
